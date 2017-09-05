@@ -3,3 +3,36 @@ body {
     margin: 1em;
     margin-top: -3em;
 }
+
+#main {
+    /*width: 700px;
+    height: 200px;*/
+    border: none;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main div {
+    width: 900px;
+    height: 1em;
+}
+
+div.longName {
+    width: 35em;
+    border: none;
+    word-wrap: break-word;
+}
+
+div.shortName {
+    width: 20em;
+    border: none;
+    word-wrap: break-word;
+}
+
+div.mediumName {
+    width: 30em;
+    border: none;
+    word-wrap: break-word;
+}
