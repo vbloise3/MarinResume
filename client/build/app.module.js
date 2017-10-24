@@ -24,7 +24,7 @@ import { MdSidenavModule, MdToolbarModule } from '@angular/material';
 import 'node_modules/hammerjs/hammer.js';
 import { Material2AppAppComponent, DialogContent } from './app.component/app.component';
 import { PersonalInterestsComponent, DialogContent2 } from './personalInterests.component/personalInterests.component';
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

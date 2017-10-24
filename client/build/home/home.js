@@ -17,7 +17,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/empty';
 import { Observable } from "rxjs/Observable";
 import { ActivatedRoute } from '@angular/router';
-var HomeComponent = (function () {
+var HomeComponent = /** @class */ (function () {
     function HomeComponent(http, route) {
         var _this = this;
         this.http = http;

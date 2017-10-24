@@ -1,10 +1,11 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by vincebloise on 1/18/17.
  */
 var express = require("express");
 var app = express();
-var Product = (function () {
+var Product = /** @class */ (function () {
     function Product(id, title, price) {
         this.id = id;
         this.title = title;

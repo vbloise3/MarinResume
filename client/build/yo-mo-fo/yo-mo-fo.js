@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by vincebloise on 12/22/16.
  */
 import { Component } from '@angular/core';
-var YoMoFoComponent = (function () {
+var YoMoFoComponent = /** @class */ (function () {
     function YoMoFoComponent() {
         this.name = 'mon vieux!';
     }

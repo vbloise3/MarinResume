@@ -13,7 +13,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Http } from '@angular/http';
 import { Injectable } from "@angular/core";
 import 'rxjs/add/operator/map';
-var ProductService = (function () {
+var ProductService = /** @class */ (function () {
     function ProductService(http) {
         this.http = http;
     }

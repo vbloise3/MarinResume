@@ -2,7 +2,7 @@
  * Created by vincebloise on 1/25/17.
  */
 import {Component, Optional, ViewEncapsulation} from '@angular/core';
-import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
+import {MatDialog, MatDialogRef, MatSnackBar, MatIcon, MatToolbar} from '@angular/material';
 import { Http, HttpModule} from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -46,7 +46,7 @@ export class Material2AppAppComponent {
 
     progress: number = 0;
 
-    constructor(private _dialog: MdDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MdSnackBar, private http: Http, route: ActivatedRoute, private _router: Router ) {
+    constructor(private _dialog: MatDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MatSnackBar, private http: Http, route: ActivatedRoute, private _router: Router ) {
         this.products = this.http.get('/products')
             .map(res => res.json())
             .catch( err => {
@@ -95,10 +95,10 @@ export class Material2AppAppComponent {
 @Component({
     template: `
     <!--div id="container" class="centerIt"-->
-        <md-toolbar color="primary" style="height: 0.25em; width: 114%; margin-left: -1em; margin-top: -1em;">            
+        <mat-toolbar color="primary" style="height: 0.25em; width: 111%; margin-left: -1em; margin-top: -1em;">            
             <img class="mdCardSmallDialogImg" src="app/app.component/MarinBioPic2.png">
             <span id="center" class="textBottom largeFont" style="width: 50%; margin-left: -1em;">&nbsp;My Contact Info</span>            
-        </md-toolbar>
+        </mat-toolbar>
     <!--/div-->
     <table>
         <tr>
@@ -107,10 +107,10 @@ export class Material2AppAppComponent {
         </tr>
     </table>
     <div class="centerIt2">
-        <button md-raised-button md-autofocus (click)="dialogRef.close('done')">Done</button>
+        <button mat-raised-button (click)="dialogRef.close('done')">Done</button>
     </div>
   `,
 })
 export class DialogContent {
-    constructor(@Optional() public dialogRef: MdDialogRef<DialogContent>) { }
+    constructor(@Optional() public dialogRef: MatDialogRef<DialogContent>) { }
 }

@@ -1,8 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Created by vincebloise on 1/18/17.
  */
-var http = require('http');
+var http = require("http");
 var server = http.createServer(function (request, response) {
     response.writeHead(200, { 'Content-Type': 'application/json' });
     response.end('{"message": "Hello Json!"}\n');

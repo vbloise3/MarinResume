@@ -3,7 +3,7 @@
  */
 
 import {Component, Optional, ViewEncapsulation} from '@angular/core';
-import {MdDialog, MdDialogRef, MdSnackBar, MdSidenav} from '@angular/material';
+import {MatDialog, MatDialogRef, MatSnackBar, MatSidenav, MatIcon} from '@angular/material';
 import { Http, HttpModule} from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -47,7 +47,7 @@ export class PersonalInterestsComponent {
 
     progress: number = 0;
 
-    constructor(private _dialog: MdDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MdSnackBar, private http: Http, route: ActivatedRoute, private _router: Router ) {
+    constructor(private _dialog: MatDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MatSnackBar, private http: Http, route: ActivatedRoute, private _router: Router ) {
         this.products = this.http.get('/products')
             .map(res => res.json())
             .catch( err => {
@@ -113,5 +113,5 @@ export class PersonalInterestsComponent {
   `,
 })
 export class DialogContent2 {
-    constructor(@Optional() public dialogRef: MdDialogRef<DialogContent2>) { }
+    constructor(@Optional() public dialogRef: MatDialogRef<DialogContent2>) { }
 }

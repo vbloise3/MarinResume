@@ -35,7 +35,8 @@ System.config({
         '@angular/cdk/coercion':    'node_modules/@angular/cdk/bundles/cdk-coercion.umd.js',
         '@angular/cdk/collections':    'node_modules/@angular/cdk/bundles/cdk-collections.umd.js',
         '@angular/cdk/rxjs':    'node_modules/@angular/cdk/bundles/cdk-rxjs.umd.js',
-        '@angular/cdk/table':    'node_modules/@angular/cdk/bundles/cdk-table.umd.js'
+        '@angular/cdk/table':    'node_modules/@angular/cdk/bundles/cdk-table.umd.js',
+        '@angular/cdk/stepper': 'node_modules/@angular/cdk/bundles/cdk-stepper.umd.js'
     },
     paths: {
         //'node_modules/@angular/material/*': 'node_modules/@angular/material/bundles/material.umd.js',

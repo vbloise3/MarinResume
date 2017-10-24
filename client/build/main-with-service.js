@@ -16,7 +16,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ProductService } from './product-service';
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent(productService) {
         this.productService = productService;
     }
@@ -38,7 +38,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

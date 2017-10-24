@@ -1,6 +1,6 @@
-<md-sidenav-container [class.m2app-dark]="isDarkTheme">
+<mat-sidenav-container [class.m2app-dark]="isDarkTheme">
 
-    <md-sidenav #sidenav mode="side" class="app-sidenav mat-elevation-z15" style="border-right-style: none;">
+    <mat-sidenav #sidenav mode="side" class="app-sidenav mat-elevation-z15" style="border-right-style: none;">
         <table>
             <tr>
                 <div *ngIf="_router.url == '/'"><td><span class="smallTextBottom"><a [routerLink]="['/1']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">description</i>My Resume</a></span></td></div>
@@ -11,9 +11,9 @@
                 <div *ngIf="_router.url != '/personalInterests'"><td><span class="smallTextBottom"><a [routerLink]="['/personalInterests']" target="_top" style="color: blue"><i class="material-icons md-18 iconBottom">directions_bike</i>Personal Interests</a></span></td></div>
             </tr>
         </table>
-    </md-sidenav>
+    </mat-sidenav>
 
-    <md-toolbar color="primary" style="height: 4em;">
+    <mat-toolbar color="primary" style="height: 4em;">
         <button class="app-icon-button" (click)="sidenav.toggle()">
             <i class="material-icons app-toolbar-menu">menu</i>
         </button>
@@ -26,11 +26,11 @@
         <span class="smallTextBottom"><i class="material-icons md-18 iconBottom">home</i>&nbsp;261 Swedesford Rd., Malvern, PA 19355&nbsp;<a href="tel:610-308-1130" style="color: white"><i class="material-icons md-18 iconBottom">phone_iphone</i>610-308-1130</a>
             &nbsp;<a href="mailto:meb339@scarletmail.rutgers.edu?Subject=Resume" target="_top" style="color: white"><i class="material-icons md-18 iconBottom">email</i><span style="font-size: xx-small">meb339@scarletmail.rutgers.edu</span></a></span>
         <!--button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button-->
-    </md-toolbar>
+    </mat-toolbar>
 
     <div class="app-content">
 
-        <md-card>
+        <mat-card>
             <table>
                 <tr>
                     <td><i class="material-icons md-18 iconNearBottom">pool</i><span class="bigPositionHeader h1Blue">Sports &mdash; I really enjoy sports! I'm an NCAA Division 1 athlete for Rutgers University in the B1G Conference</span></td>
@@ -42,7 +42,7 @@
                     |
                     <li style="list-style: none;">
                         <ul-->
-                            <md-card>
+                            <mat-card>
                             <!--li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Gravity%27s_Rainbow"> <img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/GravitysRainbow.png">Diving</a-->
                             <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/MarinDivingForResume.png"><span style="font-size: xx-large;">Diving</span>
                                 <ul>
@@ -51,8 +51,8 @@
                                     <!--li style="list-style: none;"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:640px;height:427px;" src="app/personalInterests.component/MarinAtMDC.jpg"></li-->
                                 </ul>
                             </li>
-                            </md-card>
-                            <md-card>
+                            </mat-card>
+                            <mat-card>
                             <!--li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Underworld_(DeLillo_novel)"> <img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/Underworld.png">Underworld, Don DeLillo</a-->
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/TrackForResume.png"><span style="font-size: xx-large;">Track and Field</span>
                                 <ul>
@@ -60,24 +60,24 @@
                                     <!--p><a href="https://vimeo.com/126726386">Delco Championships  - 2015 - 300 Meter Hurdles</a> from <a href="https://vimeo.com/user2689631">Vincent Bloise</a> on <a href="https://vimeo.com">Vimeo</a>.</p-->
                                 </ul>
                             </li>
-                            </md-card>
-                            <md-card>
+                            </mat-card>
+                            <mat-card>
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:66px;height:48px;" src="app/personalInterests.component/AISSoccer.jpg"><span style="font-size: xx-large;">Soccer</span>
                                 <ul>
                                     <li style="list-style: none;"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:720px;height:629px;" src="app/personalInterests.component/MarinAISSoccer.jpg"></li>
                                     <!--p><a href="https://vimeo.com/126726386">Delco Championships  - 2015 - 300 Meter Hurdles</a> from <a href="https://vimeo.com/user2689631">Vincent Bloise</a> on <a href="https://vimeo.com">Vimeo</a>.</p-->
                                 </ul>
                             </li>
-                            </md-card>
-                            <md-card>
+                            </mat-card>
+                            <mat-card>
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:68px;height:47px;" src="app/personalInterests.component/HunterJumper.jpg"><span style="font-size: xx-large;">Hunter Jumper Horse Riding</span>
                                 <ul>
                                     <li style="list-style: none;"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:665px;height:885px;" src="app/personalInterests.component/MarinHorseJumping.jpeg"></li>
                                     <!--p><a href="https://vimeo.com/126726386">Delco Championships  - 2015 - 300 Meter Hurdles</a> from <a href="https://vimeo.com/user2689631">Vincent Bloise</a> on <a href="https://vimeo.com">Vimeo</a>.</p-->
                                 </ul>
                             </li>
-                            </md-card>
-                            <md-card>
+                            </mat-card>
+                            <mat-card>
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:68px;height:47px;" src="app/personalInterests.component/FieldGoal.jpg"><span style="font-size: xx-large;">And yes, even football!</span>
                                 <ul>
                                     <li style="list-style: none;"><iframe src="https://player.vimeo.com/video/64966353" width="640" height="360" style="padding-top: 2em;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -85,21 +85,21 @@
                                     <!--p><a href="https://vimeo.com/126726386">Delco Championships  - 2015 - 300 Meter Hurdles</a> from <a href="https://vimeo.com/user2689631">Vincent Bloise</a> on <a href="https://vimeo.com">Vimeo</a>.</p-->
                                 </ul>
                             </li>
-                            </md-card>
+                            </mat-card>
                         <!--/ul>
                     </li-->
                     <!--li class="bullet11"><a href="https://www.goodreads.com/user/show/36648383-vincent-bloise"><img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/GoodReads.png">goodreads</a> </li-->
                 <!--/ul-->
 
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <table>
                 <tr>
                     <td><i class="material-icons md-18 iconNearBottom">directions_bike</i><span class="bigPositionHeader h1Blue">I also love board sports, skiing, and biking</span></td>
                 </tr>
             </table>
-            <md-card>
+            <mat-card>
                 <ul>
                     <li class="bullet11">Some of my favorite recreational activities</li>
                     <li style="list-style: none;">
@@ -111,13 +111,13 @@
                         </ul>
                     </li>
                 </ul>
-            </md-card>
-        </md-card>
+            </mat-card>
+        </mat-card>
 
     </div>
 
-</md-sidenav-container>
+</mat-sidenav-container>
 
 <span class="app-action" [class.m2app-dark]="isDarkTheme">
-  <button md-fab style="background-color:#ffcc00;" (click)="openDialog()"><md-icon class="material-icons md-18 iconWhite">mail outline</md-icon></button>
+  <button mat-fab style="background-color:#ffcc00;" (click)="openDialog()"><mat-icon class="material-icons md-18 iconWhite">mail outline</mat-icon></button>
 </span>

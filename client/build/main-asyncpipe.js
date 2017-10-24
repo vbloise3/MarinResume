@@ -19,7 +19,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/empty';
 import { Observable } from "rxjs/Observable";
 import { YoMoFoComponent } from './yo-mo-fo/yo-mo-fo';
-var AppComponent = (function () {
+var AppComponent = /** @class */ (function () {
     function AppComponent(http) {
         var _this = this;
         this.http = http;
@@ -39,7 +39,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

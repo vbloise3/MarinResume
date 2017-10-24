@@ -22,7 +22,7 @@ import 'rxjs/add/observable/empty';
 import { Observable } from "rxjs/Observable";
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
-var PersonalInterestsComponent = (function () {
+var PersonalInterestsComponent = /** @class */ (function () {
     function PersonalInterestsComponent(_dialog, /*private _mdsidenav: MdSidenav,*/ _snackbar, http, route, _router) {
         var _this = this;
         this._dialog = _dialog;
@@ -95,13 +95,13 @@ var PersonalInterestsComponent = (function () {
     return PersonalInterestsComponent;
 }());
 export { PersonalInterestsComponent };
-var DialogContent2 = (function () {
+var DialogContent2 = /** @class */ (function () {
     function DialogContent2(dialogRef) {
         this.dialogRef = dialogRef;
     }
     DialogContent2 = __decorate([
         Component({
-            template: "\n    <!--div id=\"container\" class=\"centerIt\"-->\n        <md-toolbar color=\"primary\" style=\"height: 0.25em; width: 114%; margin-left: -1em; margin-top: -1em;\">            \n            <img class=\"mdCardSmallDialogImg\" src=\"app/app.component/VinceBloiseTransparent.png\">\n            <span id=\"center\" class=\"textBottom largeFont\" style=\"width: 50%; margin-left: -1em;\">&nbsp;My Contact Info</span>            \n        </md-toolbar>\n    <!--/div-->\n    <table>\n        <tr>\n          <td><a href=\"mailto:vbloise3@gmail.com?Subject=Resume\" style=\"color: blue;\"><i class=\"material-icons md-18 iconBottom\">email</i>vbloise3@gmail.com</a></td>\n          <td><a href=\"tel:484-433-3269\" style=\"color: blue\"><i class=\"material-icons md-18 iconBottom\">phone_iphone</i>484-433-3269</a></td>\n        </tr>\n    </table>\n    <div class=\"centerIt2\">\n        <button md-raised-button md-autofocus (click)=\"dialogRef.close('done')\">Done</button>\n    </div>\n  ",
+            template: "\n    <!--div id=\"container\" class=\"centerIt\"-->\n        <md-toolbar color=\"primary\" style=\"height: 0.25em; width: 114%; margin-left: -1em; margin-top: -1em;\">            \n            <img class=\"mdCardSmallDialogImg\" src=\"app/app.component/MarinBioPic2.png\">\n            <span id=\"center\" class=\"textBottom largeFont\" style=\"width: 50%; margin-left: -1em;\">&nbsp;My Contact Info</span>            \n        </md-toolbar>\n    <!--/div-->\n    <table>\n        <tr>\n          <td><a href=\"mailto:meb339@scarletmail.rutgers.edu?Subject=Resume\" style=\"color: blue;\"><i class=\"material-icons md-18 iconBottom\">email</i>meb339@scarletmail.rutgers.edu</a></td>\n          <td><a href=\"tel:610-308-1130\" style=\"color: blue\"><i class=\"material-icons md-18 iconBottom\">phone_iphone</i>610-308-1130</a></td>\n        </tr>\n    </table>\n    <div class=\"centerIt2\">\n        <button md-raised-button md-autofocus (click)=\"dialogRef.close('done')\">Done</button>\n    </div>\n  ",
         }),
         __param(0, Optional()),
         __metadata("design:paramtypes", [MdDialogRef])
