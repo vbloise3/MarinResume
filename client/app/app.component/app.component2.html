@@ -32,40 +32,38 @@
 
     <div class="app-content">
 
-        <mat-card>
-            <mat-card>
-                <h1 class="h1Blue">Objective</h1>
-                <ul>
-                    <li class="bullet11">Seeking an internship with a leading communications institution, which provides the opportunity to expand my knowledge as a communications major.
-                        My marketing experience and my strong communication skills ensure that I will make a positive contribution to your organization.
-                    </li>
-                </ul>
-            </mat-card>
-
-            <mat-card>
-                <h1 class="h1Blue">Profile</h1>
-                <ul>
-                    <li class="bullet11">NCAA Division I student-athlete majoring in Communication and minoring in DCIM</li>
-                    <li class="bullet11">High School track team captain for three years; Varsity athlete for 6 years</li>
-                    <li class="bullet11">Received Academic Honors in both junior and senior years in high school</li>
-                    <li class="bullet11">Technical: Microsoft Office, Excel, PowerPoint, Slack, Wordpress, Piktochart, Voxer</li>
-                    <li class="bullet11">Personal: Highly coachable; proven ability to lead; driven to go beyond what is expected in order to be suiccessful; the ultimate team player</li>
-                </ul>
-            </mat-card>
-
-            <mat-card>
-                <h1 class="h1Blue">Skills</h1>
-                <ul>
-                    <li class="bullet11">Strong written and verbal communication skills with experience in sales.  Confident and skilled in presenting material to large audiences in academic and professional settings.
-                        Strong ability in relating to others and accommodating to any situation. Excellent time management skills learned from being a student-athlete.
-                    </li>
-                </ul>
-            </mat-card>
+        <mat-card class="shadowCard">
+            <h1 class="h1Blue">Objective</h1>
+            <ul>
+                <li class="bullet11">Seeking an internship with a leading communications institution, which provides the opportunity to expand my knowledge as a communications major.
+                    My marketing experience and my strong communication skills ensure that I will make a positive contribution to your organization.
+                </li>
+            </ul>
         </mat-card>
 
-        <mat-card>
+        <mat-card class="shadowCard">
+            <h1 class="h1Blue">Profile</h1>
+            <ul>
+                <li class="bullet11">NCAA Division I student-athlete majoring in Communication and minoring in DCIM</li>
+                <li class="bullet11">High School track team captain for three years; Varsity athlete for 6 years</li>
+                <li class="bullet11">Received Academic Honors in both junior and senior years in high school</li>
+                <li class="bullet11">Technical: Microsoft Office, Excel, PowerPoint, Slack, Wordpress, Piktochart, Voxer</li>
+                <li class="bullet11">Personal: Highly coachable; proven ability to lead; driven to go beyond what is expected in order to be suiccessful; the ultimate team player</li>
+            </ul>
+        </mat-card>
+
+        <mat-card class="shadowCard">
+            <h1 class="h1Blue">Skills</h1>
+            <ul>
+                <li class="bullet11">Strong written and verbal communication skills with experience in sales.  Confident and skilled in presenting material to large audiences in academic and professional settings.
+                    Strong ability in relating to others and accommodating to any situation. Excellent time management skills learned from being a student-athlete.
+                </li>
+            </ul>
+        </mat-card>
+
+        <mat-card class="shadowCard">
             <h1 class="h1Blue">Education</h1>
-            <mat-card>
+            <mat-card class="shadowCard">
                 <table>
                     <tr>
                         <td style="width: 800px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">Class of 2019 (Junior)</span></td>
@@ -75,8 +73,8 @@
                 </table>
                 <table>
                     <tr>
-                        <td style="width: 400px;"><h2 class="h1Italics"><i class="material-icons md-18 iconPositionHeader">work</i>Rutgers School of Communication and Information</h2></td>
-                        <td style="width: 400px;"><h3 class="h1Italics"><i class="material-icons md-18 iconPositionHeader">assignment_ind</i> Major: Communication; Specialization: Strategic Communication/PR; Minor: DCIM</h3></td>
+                        <td style="width: 800px;"><i class="h1Italics"><i class="material-icons md-18 iconPositionHeader">work</i>Rutgers School of Communication and Information</i></td>
+                        <td style="width: 800px;"><i class="h1Italics"><i class="material-icons md-18 iconPositionHeader">assignment_ind</i> Major: Communication; Specialization: Strategic Communication/PR; Minor: DCIM</i></td>
                     </tr>
                 </table>
                 <ul>
@@ -90,10 +88,10 @@
             </mat-card>
         </mat-card>
 
-        <mat-card>
+        <mat-card class="shadowCard">
             <h1 class="h1Blue">Work Experience</h1>
 
-            <mat-card>
+            <mat-card class="shadowCard">
                 <table>
                     <tr>
                         <td style="width:300px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">Summer 2015</span></td>
@@ -124,7 +122,7 @@
                 </ul>
             </mat-card>
 
-            <mat-card>
+            <mat-card class="shadowCard">
                 <table>
                     <tr>
                         <td style="width:300px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">Summer 2016</span></td>
@@ -150,9 +148,9 @@
             </mat-card>
         </mat-card>
 
-        <mat-card>
+        <mat-card class="shadowCard">
             <h1 class="h1Blue">Activities</h1>
-            <mat-card>
+            <mat-card class="shadowCard">
                 <table>
                     <tr>
                         <td style="width:600px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">Fall 2015 - Present</span></td>
@@ -174,7 +172,7 @@
                 </ul>
             </mat-card>
 
-            <mat-card>
+            <mat-card class="shadowCard">
                 <table>
                     <tr>
                         <td style="width:600px;"><i class="material-icons md-18 iconNearBottom">date_range</i>&nbsp;<span class="bigPositionHeader">Summer 2010 - Present</span></td>
@@ -296,9 +294,8 @@
         </mat-card-->
 
     </div>
-
+    <span class="app-action buttonPositionTop" [class.m2app-dark]="isDarkTheme">
+        <button mat-fab style="background-color:#ffcc00;" (click)="openDialog()"><mat-icon class="material-icons md-18 iconWhite">mail outline</mat-icon></button>
+    </span>
 </mat-sidenav-container>
 
-<span class="app-action" [class.m2app-dark]="isDarkTheme">
-  <button mat-fab style="background-color:#ffcc00;" (click)="openDialog()"><mat-icon class="material-icons md-18 iconWhite">mail outline</mat-icon></button>
-</span>

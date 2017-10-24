@@ -96,10 +96,10 @@ export class PersonalInterestsComponent {
 @Component({
     template: `
     <!--div id="container" class="centerIt"-->
-        <md-toolbar color="primary" style="height: 0.25em; width: 114%; margin-left: -1em; margin-top: -1em;">            
+        <mat-toolbar color="primary" style="height: 0.25em; width: 111%; margin-left: -1em; margin-top: -1em;">            
             <img class="mdCardSmallDialogImg" src="app/app.component/MarinBioPic2.png">
             <span id="center" class="textBottom largeFont" style="width: 50%; margin-left: -1em;">&nbsp;My Contact Info</span>            
-        </md-toolbar>
+        </mat-toolbar>
     <!--/div-->
     <table>
         <tr>
@@ -108,7 +108,7 @@ export class PersonalInterestsComponent {
         </tr>
     </table>
     <div class="centerIt2">
-        <button md-raised-button md-autofocus (click)="dialogRef.close('done')">Done</button>
+        <button mat-raised-button (click)="dialogRef.close('done')">Done</button>
     </div>
   `,
 })

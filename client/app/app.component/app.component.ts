@@ -2,7 +2,7 @@
  * Created by vincebloise on 1/25/17.
  */
 import {Component, Optional, ViewEncapsulation} from '@angular/core';
-import {MatDialog, MatDialogRef, MatSnackBar, MatIcon, MatToolbar} from '@angular/material';
+import {MatDialog, MatDialogRef, MatSnackBar} from '@angular/material';
 import { Http, HttpModule} from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';

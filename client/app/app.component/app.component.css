@@ -10,6 +10,11 @@ md-sidenav-container.m2app-dark {
     margin: 20px;
 }
 
+.shadowCard {
+    z-index: 2;
+    margin-bottom: 1em;
+}
+
 .app-sidenav {
     padding: 10px;
     min-width: 100px;
@@ -127,8 +132,20 @@ md-toolbar {
     position: relative;
     color: white;
     bottom: 0em;
-    left: 0.65em;
+    z-index: 5;
 }
+
+.buttonPositionTop {
+    position: fixed;
+    z-index: 5;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.cardPosition {
+    z-index: 2;
+}
+
 *::-ms-backdrop, .iconWhite {
     position: relative;
     color: white;

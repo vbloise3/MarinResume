@@ -30,7 +30,7 @@
 
     <div class="app-content">
 
-        <mat-card>
+        <mat-card class="shadowCard">
             <table>
                 <tr>
                     <td><i class="material-icons md-18 iconNearBottom">pool</i><span class="bigPositionHeader h1Blue">Sports &mdash; I really enjoy sports! I'm an NCAA Division 1 athlete for Rutgers University in the B1G Conference</span></td>
@@ -42,7 +42,7 @@
                     |
                     <li style="list-style: none;">
                         <ul-->
-                            <mat-card>
+                            <mat-card class="shadowCard">
                             <!--li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Gravity%27s_Rainbow"> <img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/GravitysRainbow.png">Diving</a-->
                             <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/MarinDivingForResume.png"><span style="font-size: xx-large;">Diving</span>
                                 <ul>
@@ -52,7 +52,7 @@
                                 </ul>
                             </li>
                             </mat-card>
-                            <mat-card>
+                            <mat-card class="shadowCard">
                             <!--li style="padding-bottom: 1em;" class="bullet11"><a href="https://en.wikipedia.org/wiki/Underworld_(DeLillo_novel)"> <img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/Underworld.png">Underworld, Don DeLillo</a-->
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" src="app/personalInterests.component/TrackForResume.png"><span style="font-size: xx-large;">Track and Field</span>
                                 <ul>
@@ -61,7 +61,7 @@
                                 </ul>
                             </li>
                             </mat-card>
-                            <mat-card>
+                            <mat-card class="shadowCard">
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:66px;height:48px;" src="app/personalInterests.component/AISSoccer.jpg"><span style="font-size: xx-large;">Soccer</span>
                                 <ul>
                                     <li style="list-style: none;"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:720px;height:629px;" src="app/personalInterests.component/MarinAISSoccer.jpg"></li>
@@ -69,7 +69,7 @@
                                 </ul>
                             </li>
                             </mat-card>
-                            <mat-card>
+                            <mat-card class="shadowCard">
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:68px;height:47px;" src="app/personalInterests.component/HunterJumper.jpg"><span style="font-size: xx-large;">Hunter Jumper Horse Riding</span>
                                 <ul>
                                     <li style="list-style: none;"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:665px;height:885px;" src="app/personalInterests.component/MarinHorseJumping.jpeg"></li>
@@ -77,7 +77,7 @@
                                 </ul>
                             </li>
                             </mat-card>
-                            <mat-card>
+                            <mat-card class="shadowCard">
                                 <li style="padding-bottom: 1em;list-style: none;" class="bullet11"><img class="mdCardImgInLineBottom md-card-sm-image" style="width:68px;height:47px;" src="app/personalInterests.component/FieldGoal.jpg"><span style="font-size: xx-large;">And yes, even football!</span>
                                 <ul>
                                     <li style="list-style: none;"><iframe src="https://player.vimeo.com/video/64966353" width="640" height="360" style="padding-top: 2em;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -93,13 +93,13 @@
 
         </mat-card>
 
-        <mat-card>
+        <mat-card class="shadowCard">
             <table>
                 <tr>
                     <td><i class="material-icons md-18 iconNearBottom">directions_bike</i><span class="bigPositionHeader h1Blue">I also love board sports, skiing, and biking</span></td>
                 </tr>
             </table>
-            <mat-card>
+            <mat-card class="shadowCard">
                 <ul>
                     <li class="bullet11">Some of my favorite recreational activities</li>
                     <li style="list-style: none;">
@@ -118,6 +118,6 @@
 
 </mat-sidenav-container>
 
-<span class="app-action" [class.m2app-dark]="isDarkTheme">
+<span class="app-action buttonPositionTop" [class.m2app-dark]="isDarkTheme">
   <button mat-fab style="background-color:#ffcc00;" (click)="openDialog()"><mat-icon class="material-icons md-18 iconWhite">mail outline</mat-icon></button>
 </span>

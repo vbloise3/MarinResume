@@ -13,13 +13,13 @@ import { YoMoFoComponent } from './yo-mo-fo/yo-mo-fo';
 import AppComponent from './appComponent/appComponent';
 import HomeComponent from './home/home';
 import { routing } from './app.routing';
-import {MatButtonModule, MatCardModule, MatDialogModule, MatSidenav, MatSnackBarModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatDialogModule, MatSnackBarModule, MatIconModule} from '@angular/material';
 // import { MaterialModule } from '@angular/material';
 import { MatSidenavModule, MatToolbarModule } from '@angular/material';
 import 'node_modules/hammerjs/hammer.js';
 import {Material2AppAppComponent, DialogContent} from './app.component/app.component';
 import {PersonalInterestsComponent, DialogContent2} from './personalInterests.component/personalInterests.component';
-import {MyMaterialModule} from '../my-material.model';
+/*import {MyMaterialModule} from '../my-material.model';*/
 
 
 @NgModule({
