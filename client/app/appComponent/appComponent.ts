@@ -2,7 +2,7 @@
  * Created by vincebloise on 1/19/17.
  */
 import { Component, ViewEncapsulation }      from '@angular/core';
-import { Http, HttpModule} from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/empty';

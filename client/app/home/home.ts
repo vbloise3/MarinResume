@@ -2,7 +2,7 @@
  * Created by vincebloise on 1/19/17.
  */
 import { Component, ViewEncapsulation }      from '@angular/core';
-import { Http, HttpModule} from '@angular/http';
+import { HttpClient} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/empty';
@@ -27,14 +27,14 @@ export default class HomeComponent {
         return Math.random();
     }
 
-    constructor(private http: Http, route: ActivatedRoute) {
+    constructor(private http: HttpClient, route: ActivatedRoute) {
 
-        this.products = this.http.get('/products')
-            .map(res => res.json())
+        this.products = this.http.get('/products') as Observable<Array<string>>;
+            /*.map(res => res.json())
             .catch( err => {
                 this.errorMessage =`Can't get product details from ${err.url}, error ${err.status} `;
                 return Observable.empty();
-            });
+            });*/
         this.productId = route.snapshot.params['id'];
         this.randomness = this.getRandomNumber();
     }

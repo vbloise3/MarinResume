@@ -4,7 +4,7 @@
 
 import {Component, Optional, ViewEncapsulation} from '@angular/core';
 import {MatDialog, MatDialogRef, MatSnackBar, MatSidenav, MatIcon} from '@angular/material';
-import { Http, HttpModule} from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/empty';
@@ -47,13 +47,13 @@ export class PersonalInterestsComponent {
 
     progress: number = 0;
 
-    constructor(private _dialog: MatDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MatSnackBar, private http: Http, route: ActivatedRoute, private _router: Router ) {
-        this.products = this.http.get('/products')
-            .map(res => res.json())
+    constructor(private _dialog: MatDialog, /*private _mdsidenav: MdSidenav,*/ private _snackbar: MatSnackBar, private http: HttpClient, route: ActivatedRoute, private _router: Router ) {
+        this.products = this.http.get('/products')  as Observable<Array<string>>;
+            /*.map(res => res.json())
             .catch( err => {
                 this.errorMessage =`Can't get product details from ${err.url}, error ${err.status} `;
                 return Observable.empty();
-            });
+            });*/
         this.productId = route.snapshot.params['id'];
         this.randomness = this.getRandomNumber();
         this.currentPath = this._router.url;
@@ -96,7 +96,7 @@ export class PersonalInterestsComponent {
 @Component({
     template: `
     <!--div id="container" class="centerIt"-->
-        <mat-toolbar color="primary" style="height: 0.25em; width: 111%; margin-left: -1em; margin-top: -1em;">            
+        <mat-toolbar color="primary" style="height: 3.15em; width: 111%; margin-left: -1em; margin-top: -1em;">            
             <img class="mdCardSmallDialogImg" src="app/app.component/MarinBioPic2.png">
             <span id="center" class="textBottom largeFont" style="width: 50%; margin-left: -1em;">&nbsp;My Contact Info</span>            
         </mat-toolbar>

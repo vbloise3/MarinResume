@@ -27,27 +27,27 @@
 
     <div class="app-content">
 
-        <md-card>
+        <mat-card>
             <button md-button>FLAT</button>
             <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
             <button md-raised-button color="primary">PRIMARY RAISED</button>
             <button md-raised-button color="accent">ACCENT RAISED</button>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <md-checkbox>Unchecked</md-checkbox>
             <md-checkbox [checked]="true">Checked</md-checkbox>
             <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
             <md-checkbox [disabled]="true">Disabled</md-checkbox>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <md-radio-button name="symbol">Alpha</md-radio-button>
             <md-radio-button name="symbol">Beta</md-radio-button>
             <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-        </md-card>
+        </mat-card>
 
-        <md-card class="app-input-section">
+        <mat-card class="app-input-section">
             <md-input placeholder="First name"></md-input>
 
             <md-input #nickname placeholder="Nickname" maxlength="50">
@@ -68,9 +68,9 @@
           &nbsp;
         </span>
             </md-input>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <md-list class="app-list">
                 <!--md-list-item *ngFor="let food of foods">
                     <h3 md-line>{{food.name}}</h3>
@@ -81,14 +81,14 @@
                     <p md-line class="demo-secondary-text"><span *ngIf="productId">id: {{productId}}</span></p>
                 </md-list-item>
             </md-list>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <md-spinner class="app-spinner"></md-spinner>
             <md-spinner color="accent" class="app-spinner"></md-spinner>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <label>
                 Indeterminate progress-bar
                 <md-progress-bar
@@ -106,9 +106,9 @@
                         [value]="progress"
                         aria-label="Determinate progress-bar example"></md-progress-bar>
             </label>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <md-tab-group>
                 <md-tab label="Earth">
                     <p>EARTH</p>
@@ -117,17 +117,17 @@
                     <p>FIRE</p>
                 </md-tab>
             </md-tab-group>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <md-icon>build</md-icon>
-        </md-card>
+        </mat-card>
 
-        <md-card>
+        <mat-card>
             <button md-button [md-menu-trigger-for]="menu">
                 MENU
             </button>
-        </md-card>
+        </mat-card>
 
         <md-menu #menu="mdMenu">
             <!--button md-menu-item>Lemon</button>
@@ -136,11 +136,11 @@
             <button md-menu-item  *ngFor="let product of products | async" (click)="select(product.title)" [disabled]="product.disabled">{{product.title}}</button>
         </md-menu>
 
-        <md-card>
+        <mat-card>
             <p>Last dialog result: {{lastDialogResult}}</p>
             <button md-raised-button (click)="openDialog()">DIALOG</button>
             <button md-raised-button (click)="showSnackbar()">SNACKBAR</button>
-        </md-card>
+        </mat-card>
 
     </div>
 
