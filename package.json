@@ -8,7 +8,8 @@
     "restServer": "nodemon build/auction-rest-server-angular.js",
     "simpleWsServer": "node build/simple-websocket-server.js",
     "twowayWsServer": "nodemon build/two-way-websocket-server.js",
-    "bidServer": "nodemon build/bids/bid-server.js"
+    "bidServer": "nodemon build/bids/bid-server.js",
+    "yose": "node server"
   },
   "dependencies": {
     "@angular/animations": "^5.1.0",
